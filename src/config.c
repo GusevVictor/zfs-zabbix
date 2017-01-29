@@ -171,7 +171,7 @@ usage(char * app_name) {
 			"\treal\t\t- print real used space after dedup\n"
 			"\tavailable\t- print available space\n\n"
 			"\tpools\t\t- print pools\n"
-	        "\tdevices\t\t- print devices in zpool\n"
+	        "\tdevices\t\t- print devices in zpool (or in all pools)\n"
 			"\tdevice-state\t- print state of device\n"
 			"\tddt-memory\t- print size of deduplication table in memory\n"
 			"\tstatus\t\t- print status message of pool\n");

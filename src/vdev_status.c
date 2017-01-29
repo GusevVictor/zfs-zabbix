@@ -233,7 +233,7 @@ zpool_print_vdev(zpool_handle_t * zhp, void * data) {
         (void) fprintf(stderr, "   see: http://zfsonlinux.org/msg/%s\n", msgId);
     */
 
-    if (config != NULL) {
+    if (strcmp(zpool_get_name(zhp), zstat->name) == 0 || zstat->name[0] == '\0') {
         nvlist_t ** spares;
         uint_t nspares;
         pool_scan_stat_t * ps = NULL;
