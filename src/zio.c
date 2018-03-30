@@ -85,12 +85,14 @@ main(int argc, char *argv[]) {
 	config_t cnf;
 	zstatus_t zstat;
 
+#if !defined(BSD)
     if(geteuid() != 0)
     {
         // Tell user to run app as root, then exit.
         fprintf(stderr, "you have to run %s as root\n", argv[0]);
         exit(1);
     }
+#endif
 
 
     cnf.zname[0] = '\0';
