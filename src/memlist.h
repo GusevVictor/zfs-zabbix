@@ -19,7 +19,7 @@ struct devlist {
     char * device;
     char * state;
     const char * message;
-    char pool[ZPOOL_MAXNAMELEN];
+    char pool[ZFS_MAX_DATASET_NAME_LEN];
 
     devlist_t * next;
 };
